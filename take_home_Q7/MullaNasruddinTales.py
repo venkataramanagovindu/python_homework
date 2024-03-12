@@ -35,10 +35,10 @@ def main():
 
     print(f"Total tales we have {total_number_of_tales}")
 
-    number = input('Enter number of Tales to retrive ')
+    number = input('Enter the number of tales to retrieve (1-{total_number_of_tales}): ')
 
     while (not number == '') and not (number.isdigit() == True and 1 <= int(number) <= total_number_of_tales):
-        number = input(f'Please enter the valid number an integer between (1 & {total_number_of_tales}) ')    
+        number = input(f'Please enter a valid number between 1 and {total_number_of_tales}: ')    
 
     if number == '':
         number = DEFAULT_NUMBER_OF_TALES
